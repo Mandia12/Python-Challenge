@@ -20,6 +20,8 @@ dec_date = ""
 #Opens and ingests file into python
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ",")
+
+#Stores header row
     csv_header = next(csvreader)
 
 #Loops through rows of cvsfile then calculates or collects
