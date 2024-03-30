@@ -6,4 +6,5 @@ This repository contains two python scripts to organize, analyze, and present va
 
 PyBank:
 
+First, I imported the modules needed then created path to access csv file. After, I stored the header row and began looping through all following rows, accessing and calculating important values like total votes and total net. This loops also created lists with values that are utilized in the following code.
 
