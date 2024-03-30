@@ -2,7 +2,7 @@
 
 Description:
 
-This repository contains two python scripts to organize, analyze, and present valuable information derived from their respective data sets. PyBank is a project that develops a financial analysis from records containing information on profit/losses and their corresponding dates. PyPoll is similar but accesses data from an eleciton poll and generates an analysis on the outcome of the poll.
+This repository contains two python scripts to organize, analyze, and present valuable information derived from their respective data sets. PyBank is a project that develops a financial analysis from records containing information on profit/losses and their corresponding dates. PyPoll is similar but accesses data from an eleciton poll and generates an analysis on the outcome of the poll. Almost all the code was written on my own but I had to procure the writelines() method from an external source.
 
 PyBank:
 
@@ -24,7 +24,7 @@ Subsequently, a for loop is utilized to observe each row and compare the row's t
 
 Then, a dictionary is created where all the values represent the lines for the final analysis. Some of these dictionary values access "zipped_data" via indexing to build the lines correctly.
 
-Ultimately, a new txt. file is opened in write mode and the dictionary is employed to write analysis into that file and also to print analysis in terminal.
+Ultimately, a new txt. file is opened in write mode and the dictionary is employed to write the analysis into that file and to print the analysis into the terminal.
 
 References:
 
