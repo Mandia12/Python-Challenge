@@ -56,6 +56,6 @@ datafile = open("Analysis/Analysis Results.txt", "w")
 lines = [(my_dict[i+1] + "\n") for i in range(len(my_dict))]   
 datafile.writelines(lines)
 
-#Finally, printing results in terminal
+#Finally printing results in terminal
 for i in range(len(my_dict)):
     print(my_dict[i+1])
