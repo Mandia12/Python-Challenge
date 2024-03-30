@@ -40,7 +40,7 @@ great_dec = min(changes)
 inc_date = lists[changes.index(great_inc)+ 1][0]
 dec_date = lists[changes.index(great_dec) + 1][0]
 
-#Finally, a dictionary and a for loop to print the result
+#A dictionary created to store all lines for analysis result texts
 my_dict = {
     1: "Financial Analysis",
     2:"-----------------------------------",
@@ -51,5 +51,11 @@ my_dict = {
     7: f"Greatest Decrease in Profits: {dec_date} (${great_dec})"
     }
 
+#Opens a file to write to, creates a list of lines, then writes lines in new txt. file
+datafile = open("Analysis/Analysis Results.txt", "w")
+lines = [(my_dict[i+1] + "\n") for i in range(len(my_dict))]   
+datafile.writelines(lines)
+
+#Finally, printing results in terminal
 for i in range(len(my_dict)):
     print(my_dict[i+1])

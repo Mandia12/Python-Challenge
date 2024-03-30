@@ -4,11 +4,14 @@ import csv
 
 total_votes = 0
 candidates = []
-
+votes_for_charles = 0
+votes_for_diana = 0
+votes_for_raymon = 0
+all_data = []
 
 csvpath = os.path.join('Resources', 'election_data.csv')
 
-with open(csvpath) as csvfile:
+with open(csvpath, encoding = "UTF-8") as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ",")
     csv_header = next(csvreader)
 
@@ -16,6 +19,22 @@ with open(csvpath) as csvfile:
         total_votes += 1
         if row[2] not in candidates:
             candidates.append(row[2])
+        all_data.append(row)
+        
+for vote in all_data:
+    if vote[2] == candidates[0]:
+        votes_for_charles += 1
+    elif vote[2] == candidates[1]:
+        votes_for_diana += 1
+    else:
+        vote[2] == candidates[2]
+        votes_for_raymon += 1
 
-print(total_votes)
-print(candidates)
+vote_list = [votes_for_charles, votes_for_diana, votes_for_raymon]
+
+percent_list = [round((vote / total_votes) * 100, 3) for vote in vote_list]
+
+zipped_data = list(zip(candidates, percent_list, vote_list))
+
+for cand in zipped_data:
+    if 
