@@ -47,8 +47,8 @@ my_dict = {
     3: f"Total Months: {total_months}", 
     4: f"Total: ${total_net}", 
     5: f"Average Change: ${avgchange}", 
-    6: f"Greatest Increase in Profits: {inc_date} ({great_inc})", 
-    7: f"Greatest Decrease in Profits: {dec_date} ({great_dec})"
+    6: f"Greatest Increase in Profits: {inc_date} (${great_inc})", 
+    7: f"Greatest Decrease in Profits: {dec_date} (${great_dec})"
     }
 
 for i in range(len(my_dict)):
