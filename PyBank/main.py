@@ -43,7 +43,7 @@ dec_date = lists[changes.index(great_dec) + 1][0]
 #A dictionary created to store all lines for analysis result texts
 my_dict = {
     1: "Financial Analysis",
-    2:"-----------------------------------",
+    2: "----------------------------",
     3: f"Total Months: {total_months}", 
     4: f"Total: ${total_net}", 
     5: f"Average Change: ${avgchange}", 
@@ -52,7 +52,7 @@ my_dict = {
     }
 
 #Opens a file to write to, creates a list of lines, then writes lines in new txt. file
-datafile = open("Analysis/Analysis Results.txt", "w")
+datafile = open("Analysis/Bank Analysis Results.txt", "w")
 lines = [(my_dict[i+1] + "\n") for i in range(len(my_dict))]   
 datafile.writelines(lines)
 
